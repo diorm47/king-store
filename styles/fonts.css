@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Benzin";
+  src: url("../assets/fonts/benzin-extra-bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SF400";
+  src: url("../assets/fonts/sf-pro-display/SFPRODISPLAYREGULAR.OTF")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "SF600";
+  src: url("../assets/fonts/sf-pro-display/SFPRODISPLAYBOLD.OTF")
+    format("opentype");
+}
