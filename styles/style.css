@@ -881,6 +881,58 @@ footer {
 .adress_w a {
   display: none;
 }
+
+.circle_bg {
+  background: url(../assets/images/btm-bg.png);
+  background-position: center;
+  position: relative;
+  background-size: cover;
+}
+
+.circle_bg_w {
+  position: relative;
+  background: url(../assets/images/bg-circle.png);
+}
+.discount_bg {
+  background: url(../assets/images/trade-bg.png);
+  background-position: center;
+  position: relative;
+  background-size: cover;
+}
+
+.about_bg {
+  background: url(../assets/images/about-bg.png);
+  background-position: center;
+  position: relative;
+  background-size: cover;
+}
+
+.top_bg {
+  background: url(../assets/images/adv-bg.png);
+  background-position: top;
+  background-repeat: no-repeat;
+
+  position: relative;
+}
+.top_bg::before,
+.about_bg::before,
+.discount_bg::before,
+.circle_bg_w::before {
+  content: "";
+  position: absolute;
+  inset: 0; 
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+}
+
+.top_bg > *,
+.about_bg > *,
+.discount_bg > *,
+.circle_bg_w > * {
+  position: relative;
+  z-index: 2;
+}
+
 @media only screen and (max-width: 1150px) {
   .container {
     padding-left: 20px;
@@ -1416,9 +1468,9 @@ footer {
     width: 29px;
     height: 29px;
   }
-.adress_w a {
-  display: flex;
-}
+  .adress_w a {
+    display: flex;
+  }
   header {
     background: url(../assets/images/header-bg-mob.png);
     background-size: cover;
