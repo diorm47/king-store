@@ -1416,8 +1416,12 @@ footer {
     width: 29px;
     height: 29px;
   }
-
+.adress_w a {
+  display: flex;
+}
   header {
     background: url(../assets/images/header-bg-mob.png);
+    background-size: cover;
+    background-position: bottom;
   }
 }
