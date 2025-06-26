@@ -1294,6 +1294,9 @@ footer {
     align-items: center;
     justify-content: center;
   }
+  .about_mob img {
+    max-width: 260px;
+  }
   .discount_form_w {
     padding-top: 42px;
   }
@@ -1440,6 +1443,8 @@ footer {
     background: url(../assets/images/gift-bg-mob.png);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: contain;
+
   }
 
   .contact_form_w {
