@@ -464,12 +464,25 @@ header {
   margin-left: 62px;
   margin-bottom: 57px;
 }
+.about_text img {
+  position: absolute;
+}
+.about_text2 img,
+.about_text4 img {
+  top: -25px;
+  left: -50px;
+}
+
+.about_text3 img {
+  top: -70px;
+  right: 8px;
+}
 .about_text3 {
-  max-width: 457px;
+  max-width: 460px;
   margin-bottom: 57px;
 }
 .about_text4 {
-  margin-left: 62px;
+  margin-left: 134px;
 }
 
 .about,
@@ -920,8 +933,8 @@ footer {
 .circle_bg_w::before {
   content: "";
   position: absolute;
-  inset: 0; 
-  background: rgba(0, 0, 0, 0.5); 
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
@@ -931,6 +944,10 @@ footer {
 .circle_bg_w > * {
   position: relative;
   z-index: 2;
+}
+
+.mob_img {
+  display: none !important;
 }
 
 @media only screen and (max-width: 1150px) {
@@ -983,6 +1000,8 @@ footer {
     font-weight: 400;
     line-height: 130.5%;
     letter-spacing: -2%;
+    max-width: 278.36px;
+    margin: 0 auto;
   }
 
   .header_title p {
@@ -990,11 +1009,12 @@ footer {
     font-weight: 600;
     line-height: 25.9px;
     letter-spacing: -1%;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin: 0 auto;
+    max-width: 268px;
+    margin-top: 14px;
   }
   .header_actions {
-    margin-top: 168px;
+    margin-top: 200px;
     display: flex;
     flex-direction: column-reverse;
   }
@@ -1205,6 +1225,8 @@ footer {
   .about_content {
     padding: 0;
     margin-top: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .about_text p {
     font-size: 14px;
@@ -1225,6 +1247,45 @@ footer {
   .about_text4 {
     margin-left: 0;
     margin-bottom: 0;
+  }
+  .about_text {
+    margin-bottom: 36px;
+  }
+  .about_text2 img,
+  .top_line_ic {
+    height: 57px;
+    top: auto;
+    bottom: -20px;
+  }
+
+  .about_text3 img {
+    position: absolute;
+    height: 57px;
+    bottom: -30px;
+  }
+
+  .top_line_ic,
+  .about_text3 img {
+    left: -20px !important;
+
+    bottom: -20px !important;
+    top: auto;
+  }
+  .top_line_ic {
+    display: flex !important;
+  }
+  .about_text4 img {
+    display: none;
+  }
+  .des_img {
+    display: none;
+  }
+  .mob_img {
+    display: flex !important;
+  }
+  .about_text2 .mob_img {
+    right: 0;
+    left: auto;height: 32.35px;
   }
   .about_mob {
     display: flex;
@@ -1473,7 +1534,17 @@ footer {
   }
   header {
     background: url(../assets/images/header-bg-mob.png);
-    background-size: cover;
+    background-repeat: no-repeat;
     background-position: bottom;
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .header_actions {
+    margin-top: 168px;
+  }
+  header {
+    background-size: contain;
   }
 }
