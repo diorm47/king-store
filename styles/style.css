@@ -795,7 +795,9 @@ header {
   right: -95px;
   top: 170px;
 }
-
+.top_line_ic {
+  display: none;
+}
 .footer_wrapper {
   max-width: 1000px;
   display: flex;
@@ -1014,7 +1016,7 @@ footer {
     margin-top: 14px;
   }
   .header_actions {
-    margin-top: 200px;
+    margin-top: 260px;
     display: flex;
     flex-direction: column-reverse;
   }
@@ -1538,11 +1540,15 @@ footer {
     background-position: bottom;
     background-size: cover;
   }
+
+  .circle_bg, .circle_bg_w, .circle_bg   {
+    background: none
+  }
 }
 
 @media only screen and (max-width: 330px) {
   .header_actions {
-    margin-top: 168px;
+    margin-top: 180px;
   }
   header {
     background-size: contain;
