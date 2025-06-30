@@ -26,21 +26,42 @@
                 ><img src="./assets/icons/tg.svg" alt=""
               /></a>
               <a href="#"><button class="call_btn">Заказать звонок</button></a>
-              <div class="menu_btn">
+              <div class="menu_btn" onclick="toggleMenu()">
                 <img src="./assets/icons/menu.svg" alt="" />
               </div>
             </div>
           </div>
         </nav>
 
+        <div class="mob_menu">
+          <div class="mob_menu_top">
+            <img onclick="toggleMenu()" src="./assets/icons/exit.svg" alt="" />
+          </div>
+          <div class="mob_menu_content">
+            <a href="#"
+              ><button class="nav_calc_btn">Рассчитать Trade-In</button></a
+            >
+            <a href="#"><button class="call_btn">Заказать звонок</button></a>
+          </div>
+        </div>
+
         <div class="header_content">
           <div class="header_title">
-            <h1>
+            <h1 class="hidden">
               iPhone по
               <span
                 >оптовым <br />
                 ценам</span
               >
+              в розницу
+            </h1>
+            <h1 class="mob_hidden">
+              iPhone по
+              <span
+                >оптовым <br />
+                ценам</span
+              >
+              <br />
               в розницу
             </h1>
             <p>Оригинальная техника Apple в наличии с гарантией</p>
@@ -227,7 +248,11 @@
 
         <div class="popular_models container">
           <div class="block_title">
-            <h2>Популярные <span>модели</span></h2>
+            <h2 class="hidden">Популярные <span>модели</span></h2>
+            <h2 class="mob_hidden">
+              Популярные <br />
+              <span>модели</span>
+            </h2>
             <div class="title_sec">
               <p>У нас представлена только оригинальная техника Apple</p>
               <img src="./assets/icons/check.svg" alt="" />
@@ -306,10 +331,18 @@
       <div class="about_bg">
         <div class="about container">
           <div class="block_title">
-            <h2>
+            <h2 class="hidden">
               KINGSTORE
               <span
                 >— больше, <br />
+                чем магазин</span
+              >
+            </h2>
+            <h2 class="mob_hidden">
+              KINGSTORE
+              <span
+                >— <br />
+                больше, <br />
                 чем магазин</span
               >
             </h2>
@@ -376,7 +409,11 @@
       <div class="discount_bg">
         <div class="discount_form_w container">
           <div class="block_title">
-            <h2>
+            <h2 class="hidden">
+              Trade-in <br />
+              <span>скидка до 80%</span>
+            </h2>
+            <h2 class="mob_hidden">
               Trade-in <br />
               <span>скидка до 80%</span>
             </h2>
@@ -439,8 +476,16 @@
         <div class="circle_bg">
           <div class="gift container">
             <div class="block_title">
-              <h2>
+              <h2 class="hidden">
                 <span>Подарок к каждому iPhone -</span> <br />
+                только сегодня
+              </h2>
+              <h2 class="mob_hidden">
+                <span
+                  >Подарок <br />
+                  к каждому iPhone <br />
+                  -</span
+                >
                 только сегодня
               </h2>
             </div>
@@ -484,8 +529,12 @@
 
           <div class="contact_form_w container">
             <div class="block_title">
-              <h2>
+              <h2 class="hidden">
                 <span>подберем</span> лучший iphone <br />
+                <span>под ваш бюджет </span>
+              </h2>
+              <h2 class="mob_hidden">
+                <span>подберем</span> <br> лучший iphone <br />
                 <span>под ваш бюджет </span>
               </h2>
             </div>
@@ -574,6 +623,12 @@
           },
         },
       });
+
+      function toggleMenu() {
+        document
+          .querySelector(".mob_menu")
+          .classList.toggle("mob_menu_visible");
+      }
     </script>
   </body>
 </html>
