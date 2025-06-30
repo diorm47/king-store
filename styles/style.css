@@ -889,6 +889,11 @@ footer {
 .adress_w a {
   display: none;
 }
+.tg_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .circle_bg {
   background: url(../assets/images/btm-bg.png);
@@ -1312,7 +1317,7 @@ footer {
     letter-spacing: -1%;
   }
   .booking_btn {
-    height: 26.92px;
+    height: 32px;
     font-size: 5.85px;
     font-weight: 600;
     line-height: 130%;
@@ -1358,8 +1363,10 @@ footer {
     font-size: 14px;
     text-align: center;
   }
-  .about_text1 img {
-    display: none;
+  .about_text1 img:nth-child(3) {
+    top: 47px;
+    width: 13.94px;
+    height: 13.94px;    left: 183px;
   }
   .about_text2 {
     margin-left: 0;
@@ -1376,6 +1383,12 @@ footer {
   }
   .about_text {
     margin-bottom: 36px;
+    max-width: 254px;
+  }
+  .about_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .about_text2 img,
   .top_line_ic {
@@ -1450,8 +1463,8 @@ footer {
     line-height: 22.24px;
     letter-spacing: -1%;
     font-family: SF400;
-    letter-spacing: 1px;
-    max-width: 207px;
+
+    max-width: 200px;
   }
   .contact_form .form_title p {
     margin: 0 auto;
