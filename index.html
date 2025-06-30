@@ -440,19 +440,35 @@
 
               <div class="form_item">
                 <p>Выберите айфон</p>
-                <select name="" id="">
-                  <option value="">Iphone 16 Pro Max, 128 gb</option>
-                  <option value="">Iphone 16 Pro, 128 gb</option>
-                  <option value="">Iphone 16, 128 gb</option>
-                </select>
+                <div class="custom-select-wrapper">
+                  <div class="custom-select" id="customSelect">
+                    <span class="selected">Iphone 16 Pro Max, 128 gb</span>
+                    <div class="arrow">
+                      <img src="./assets/icons/arrow.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="custom-options" id="customOptions">
+                    <div class="custom-option">Iphone 16 Pro Max, 128 gb</div>
+                    <div class="custom-option">Iphone 16 Pro, 128 gb</div>
+                    <div class="custom-option">Iphone 16, 128 gb</div>
+                  </div>
+                </div>
               </div>
               <div class="form_item">
                 <p>Выберите объём памяти</p>
-                <select name="" id="">
-                  <option value="">128 gb</option>
-                  <option value="">64 gb</option>
-                  <option value="">256 gb</option>
-                </select>
+                <div class="custom-select-wrapper">
+                  <div class="custom-select" id="customSelect">
+                    <span class="selected">128</span>
+                    <div class="arrow">
+                      <img src="./assets/icons/arrow.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="custom-options" id="customOptions">
+                    <div class="custom-option">256 gb</div>
+                    <div class="custom-option">128 gb</div>
+                    <div class="custom-option">64 gb</div>
+                  </div>
+                </div>
               </div>
 
               <div class="form_item">
@@ -534,7 +550,8 @@
                 <span>под ваш бюджет </span>
               </h2>
               <h2 class="mob_hidden">
-                <span>подберем</span> <br> лучший iphone <br />
+                <span>подберем</span> <br />
+                лучший iphone <br />
                 <span>под ваш бюджет </span>
               </h2>
             </div>
@@ -623,12 +640,6 @@
           },
         },
       });
-
-      function toggleMenu() {
-        document
-          .querySelector(".mob_menu")
-          .classList.toggle("mob_menu_visible");
-      }
     </script>
   </body>
 </html>

@@ -991,6 +991,72 @@ footer {
   display: none;
 }
 
+.custom-select-wrapper {
+  position: relative;
+  width: 100%;
+  color: rgb(54, 54, 54);
+  font-family: SF400;
+  font-size: 17.37px;
+  font-weight: 400;
+  line-height: 45.32px;
+  letter-spacing: -1%;
+  text-align: left;
+}
+
+.custom-select {
+  border-radius: 17px;
+  height: 99px;
+  background: rgb(240, 240, 240);
+  padding: 0 28px 0 28px;
+
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  user-select: none;
+}
+
+.arrow {
+  font-size: 12px;
+  margin-left: 10px;
+  transition: transform 0.3s;
+}
+
+.custom-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: white;
+  border: 1px solid #ccc;
+  border-top: none;
+  z-index: 10;
+  display: none;
+  border-radius: 0 0 17px 17px;
+}
+.custom-options .custom-option:last-child {
+  border-radius: 0 0 17px 17px;
+}
+
+.custom-option {
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.custom-option:hover {
+  background: #f5f5f5;
+}
+
+.custom-select.open + .custom-options {
+  display: block;
+}
+
+.custom-select.open .arrow {
+  transform: rotate(180deg);
+}
+
 @media only screen and (max-width: 1150px) {
   .container {
     padding-left: 20px;
@@ -1384,7 +1450,7 @@ footer {
     line-height: 22.24px;
     letter-spacing: -1%;
     font-family: SF400;
-   letter-spacing: 1px;
+    letter-spacing: 1px;
     max-width: 207px;
   }
   .contact_form .form_title p {
@@ -1615,6 +1681,57 @@ footer {
   .circle_bg_w,
   .circle_bg {
     background: none;
+  }
+
+  .custom-select-wrapper {
+    position: relative;
+    width: 100%;
+    font-size: 9.66px;
+    font-weight: 400;
+    line-height: 25.2px;
+    letter-spacing: -1%;
+  }
+
+  .custom-select {
+    border-radius: 9px;
+    height: 55.05px;
+    background: rgb(240, 240, 240);
+    padding: 0 15px 0 15px;
+
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    user-select: none;
+  }
+  .arrow img {
+    width: 9px;
+  }
+  .custom-option {
+    padding: 8px 15px;
+  }
+
+  .arrow {
+    font-size: 12px;
+    margin-left: 10px;
+    transition: transform 0.3s;
+  }
+
+  .custom-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    z-index: 10;
+    display: none;
+    border-radius: 0 0 9px 9px;
+  }
+  .custom-options .custom-option:last-child {
+    border-radius: 0 0 9px 9px;
   }
 }
 

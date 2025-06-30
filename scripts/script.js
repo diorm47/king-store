@@ -1,3 +1,4 @@
+// timer
 let totalSeconds = 59631;
 
 const digits = document.querySelectorAll(".timer_num p");
@@ -27,3 +28,37 @@ function updateTimer() {
 
 updateTimer();
 const interval = setInterval(updateTimer, 1000);
+
+// menu
+function toggleMenu() {
+  document.querySelector(".mob_menu").classList.toggle("mob_menu_visible");
+}
+
+// select
+document.querySelectorAll(".custom-select").forEach((select) => {
+  const wrapper = select.parentElement;
+  const selected = select.querySelector(".selected");
+  const options = wrapper.querySelectorAll(".custom-option");
+
+  select.addEventListener("click", () => {
+    document.querySelectorAll(".custom-select").forEach((s) => {
+      if (s !== select) s.classList.remove("open");
+    });
+    select.classList.toggle("open");
+  });
+
+  options.forEach((option) => {
+    option.addEventListener("click", () => {
+      selected.textContent = option.textContent;
+      select.classList.remove("open");
+    });
+  });
+});
+
+document.addEventListener("click", function (e) {
+  if (!e.target.closest(".custom-select-wrapper")) {
+    document
+      .querySelectorAll(".custom-select")
+      .forEach((s) => s.classList.remove("open"));
+  }
+});
