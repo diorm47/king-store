@@ -4,6 +4,13 @@
 }
 
 @font-face {
+  font-family: "SF300";
+  src: url("../assets/fonts/sf-pro-display/SF-Pro-Display-Light.otf")
+    format("opentype");
+}
+
+
+@font-face {
   font-family: "SF400";
   src: url("../assets/fonts/sf-pro-display/SFPRODISPLAYREGULAR.OTF")
     format("opentype");

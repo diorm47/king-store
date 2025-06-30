@@ -104,9 +104,9 @@ header {
 
 .header_title p {
   color: rgb(255, 255, 255);
-  font-family: SF600;
+  font-family: SF400;
   font-size: 23.18px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 38.89px;
   letter-spacing: -1%;
   text-align: center;
@@ -145,7 +145,7 @@ header {
   font-size: 20.98px;
   font-weight: 600;
   line-height: 130%;
-  letter-spacing: 10%;
+  letter-spacing: 1px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -267,12 +267,9 @@ header {
   height: 486px;
   box-sizing: border-box;
   border-radius: 41.59px;
-
-  background: linear-gradient(
-    53.6deg,
-    rgb(19, 19, 32) 36.489%,
-    rgb(41, 41, 65) 138.291%
-  );
+  background: url(../assets/images/cards-bg.png);
+  background-position: center;
+  background-size: cover;
   padding: 30px;
 }
 
@@ -343,11 +340,9 @@ header {
   box-sizing: border-box;
   border-radius: 38px;
 
-  background: linear-gradient(
-    53.6deg,
-    rgb(19, 19, 32) 44.129%,
-    rgb(58, 58, 89) 141.147%
-  );
+  background: url(../assets/images/cards-bg-2.png);
+  background-size: cover;
+  background-position: center;
   padding-top: 20px;
 }
 
@@ -381,9 +376,9 @@ header {
 
 .popular_card_desc h5 {
   color: rgb(255, 235, 164);
-  font-family: SF600;
+  font-family: SF400;
   font-size: 38px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 61.8px;
   letter-spacing: -1%;
   text-align: left;
@@ -396,20 +391,16 @@ header {
   border-radius: 34.66px;
 
   box-shadow: 0px 2.17px 0px 1px rgb(34, 34, 69);
-  background: radial-gradient(
-      55% 55% at 50% 2%,
-      rgba(255, 255, 255, 0.1) 50.611%,
-      rgba(255, 255, 255, 0) 100%
-    ),
-    rgb(58, 58, 89);
-
+  background: url(../assets/images/bgt-bg.png);
+  background-position: center;
+  background-size: cover;
   height: 69px;
   color: rgb(255, 255, 255);
   font-family: SF600;
   font-size: 15px;
   font-weight: 600;
   line-height: 130%;
-  letter-spacing: 10%;
+  letter-spacing: 1px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -615,7 +606,7 @@ header {
   font-size: 17.47px;
   font-weight: 600;
   line-height: 130%;
-  letter-spacing: 10%;
+  letter-spacing: 1px;
   margin-top: 10px;
 }
 
@@ -623,7 +614,9 @@ header {
   padding-top: 216px;
   padding-bottom: 77px;
   background: url(../assets/images/gift-bg.png);
-  background-position: top;
+  background-position: center;
+  background-size: calc(123%);
+  background-repeat: no-repeat;
 }
 
 .gift .block_title {
@@ -697,7 +690,7 @@ header {
 
 .timers_time_names p {
   color: rgb(18, 18, 18);
-  font-family: SF400;
+  font-family: SF300;
   font-size: 24.95px;
   font-weight: 300;
   line-height: 160%;
@@ -724,7 +717,7 @@ header {
   font-size: 19.67px;
   font-weight: 600;
   line-height: 130%;
-  letter-spacing: 10%;
+  letter-spacing: 1px;
 }
 
 .contact_form_w {
@@ -1066,7 +1059,7 @@ footer {
     font-size: 9.9px;
     font-weight: 600;
     line-height: 130%;
-    letter-spacing: 10%;
+    letter-spacing: 1px;
     width: 196.85px;
     height: 60.38px;
   }
@@ -1099,11 +1092,9 @@ footer {
     box-sizing: border-box;
     border-radius: 21.42px;
     height: 250px;
-    background: linear-gradient(
-      53.6deg,
-      rgb(19, 19, 32) 40.444%,
-      rgb(41, 41, 65) 139.769%
-    );
+    background: url(../assets/images/cards-bg-mob.png);
+    background-size: cover;
+    background-position: center;
     padding: 15px;
   }
   .adv_card img {
@@ -1158,14 +1149,18 @@ footer {
     margin-bottom: 23px;
   }
   .popular_card {
-    width: 100%;
+    width: 48%;
     height: auto;
     border-radius: 14.82px;
     padding-bottom: 11px;
+    background: url(../assets/images/cards-bg-2-mob.png);
+    background-size: cover;
+    background-position: center;
   }
   .popular_cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+display: flex;
+align-items: center;
+flex-wrap: wrap;
     gap: 10px;
     padding-top: 10px;
   }
@@ -1185,7 +1180,7 @@ footer {
 
   .popular_card_desc h5 {
     font-size: 14.82px;
-    font-weight: 600;
+    font-weight: 400;
 
     line-height: 24.11px;
     letter-spacing: -1%;
@@ -1195,10 +1190,13 @@ footer {
     font-size: 5.85px;
     font-weight: 600;
     line-height: 130%;
-    letter-spacing: 10%;
+    letter-spacing: 1px;
     width: 100%;
     border-radius: 13.52px;
     box-shadow: 0px 0.85px 0px 0.39px rgb(34, 34, 69);
+    background: url(../assets/images/bgt-bg-mob.png);
+    background-position: center;
+    background-size: cover;
   }
   .popular_card_desc {
     padding: 0 13px;
@@ -1287,7 +1285,8 @@ footer {
   }
   .about_text2 .mob_img {
     right: 0;
-    left: auto;height: 32.35px;
+    left: auto;
+    height: 32.35px;
   }
   .about_mob {
     display: flex;
@@ -1436,7 +1435,7 @@ footer {
     font-size: 9.79px;
     font-weight: 600;
     line-height: 130%;
-    letter-spacing: 10%;
+    letter-spacing: 1px;
     text-align: center;
   }
   .gift {
@@ -1444,7 +1443,6 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-
   }
 
   .contact_form_w {
@@ -1546,9 +1544,12 @@ footer {
     background-size: cover;
   }
 
-  .circle_bg, .circle_bg_w, .circle_bg   {
-    background: none
+  .circle_bg,
+  .circle_bg_w,
+  .circle_bg {
+    background: none;
   }
+
 }
 
 @media only screen and (max-width: 330px) {
