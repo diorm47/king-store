@@ -1197,7 +1197,7 @@ footer {
 
   header {
     height: auto;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
   }
   .advantages {
     padding-top: 46px;
@@ -1745,6 +1745,13 @@ footer {
   }
   .custom-options .custom-option:last-child {
     border-radius: 0 0 9px 9px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  header {
+    height: auto;
+    padding-bottom: 50px;
   }
 }
 
