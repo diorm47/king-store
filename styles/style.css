@@ -1073,7 +1073,7 @@ footer {
   justify-content: center;
   left: 0;
   top: 0;
-  background: #000;
+  background: #00000070;
   z-index: 111;
   transition: all 0.4s ease;
   transform: translateY(100%);
