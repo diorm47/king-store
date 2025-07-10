@@ -1228,7 +1228,7 @@ footer {
     height: 260px;
     background: url(../assets/images/cards-bg-mob.png);
     background-size: cover;
-    background-position: center;
+    background-position: left;
     padding: 15px;
   }
   .adv_card img {
@@ -1289,7 +1289,7 @@ footer {
     padding-bottom: 11px;
     background: url(../assets/images/cards-bg-2-mob.png);
     background-size: cover;
-    background-position: center;
+    background-position: right;
   }
   .popular_cards {
     display: flex;
@@ -1363,13 +1363,14 @@ footer {
     padding-right: 20px;
   }
   .about_text p {
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
   }
   .about_text1 img:nth-child(3) {
-    top: 47px;
+    top: 55px;
     width: 13.94px;
-    height: 13.94px;    left: 183px;
+    height: 13.94px;
+    left: 209px;
   }
   .about_text2 {
     margin-left: 0;
@@ -1386,7 +1387,7 @@ footer {
   }
   .about_text {
     margin-bottom: 36px;
-    max-width: 254px;
+    /* max-width: 254px; */
   }
   .about_content {
     display: flex;
@@ -1466,7 +1467,6 @@ footer {
     line-height: 22.24px;
     letter-spacing: -1%;
     font-family: SF400;
-
   }
   .contact_form .form_title p {
     margin: 0 auto;
@@ -1692,7 +1692,7 @@ footer {
   header {
     background: url(../assets/images/header-bg-mob.png);
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: top;
     background-size: cover;
   }
 
