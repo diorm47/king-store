@@ -62,3 +62,22 @@ document.addEventListener("click", function (e) {
       .forEach((s) => s.classList.remove("open"));
   }
 });
+
+// popup
+
+const overlay = document.querySelector(".overlay");
+const contactForm = document.querySelector(".contact_form");
+const modal_exit = document.querySelector(".modal_exit");
+const bookingBtns = document.querySelectorAll(".booking_btn");
+
+bookingBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    overlay.classList.add("overlay_active");
+    document.body.style.overflow = "hidden";
+  });
+});
+
+modal_exit.addEventListener("click", () => {
+  overlay.classList.remove("overlay_active");
+  document.body.style.overflow = "";
+});
